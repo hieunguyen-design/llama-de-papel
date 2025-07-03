@@ -299,6 +299,7 @@ function customerReview() {
 
   section.appendChild(track);
   content.appendChild(section);
+  createFooter();
 }
 //menu
 function menu_content() {
@@ -323,6 +324,7 @@ function menu_content() {
     section.appendChild(card);
   });
   content.appendChild(section);
+  createFooter();
 }
 
 //about
