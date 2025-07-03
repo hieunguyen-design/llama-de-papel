@@ -6,7 +6,7 @@
 
 ## 🔗 Live Site
 
-## 👉 [View the Website on GitHub Pages](https://hieunguyen-design.github.io/restaurant-page/)
+## 👉 [View the Website on GitHub Pages](https://hieunguyen-design.github.io/llama-de-papel/)
 
 ---
 
