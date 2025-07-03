@@ -1,0 +1,306 @@
+/* Color Theme Swatches in Hex */
+:root {
+  --color-1: #577957;
+  --color-2: #ffe8ad;
+  --color-3: #ff8b34;
+  --color-4: #1f1f29;
+  --color-5: #f0f0f0;
+}
+.Llama-Papel-1-hex {
+  color: var(--color-1);
+}
+.Llama-Papel-2-hex {
+  color: var(--color-2);
+}
+.Llama-Papel-3-hex {
+  color: var(--color-3);
+}
+.Llama-Papel-4-hex {
+  color: var(--color-4);
+}
+.Llama-Papel-5-hex {
+  color: var(--color-5);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat Alternates", sans-serif;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  button {
+    box-shadow: 4px 4px 4px var(--color-4);
+    &:active {
+      box-shadow: 2px 2px 2px var(--color-4);
+      transform: translate(2px);
+    }
+  }
+  header {
+    width: 100vw;
+    height: auto;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    box-shadow: 4px 0px 10px black;
+    .headerNav {
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+      width: 1080px;
+      justify-content: space-between;
+      padding: 0px 10px;
+      nav {
+        display: flex;
+        gap: 25px;
+        button {
+          width: 5rem;
+          height: 2rem;
+          border-radius: 0.5rem;
+          border: 5px solid var(--color-3);
+          background-color: antiquewhite;
+          color: var(--color-4);
+          &:hover {
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+
+  #content {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    width: 1080px;
+    .header-banner {
+      background-color: #ff8b34;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      background-image: url(./assets/jarritos-mexican-soda-E0txIcqePac-unsplash.jpg);
+      color: var(--color-5);
+      text-shadow: 4px 4px 10px black;
+
+      h1 {
+        background-blend-mode: multiply;
+
+        font-size: 72px;
+      }
+      h3 {
+        font-weight: 400;
+        width: 80%;
+      }
+      div {
+        display: flex;
+        gap: 50px;
+      }
+      .viewMenu {
+        border-radius: 1rem;
+        font-size: large;
+        border: 5px solid var(--color-1);
+        background-color: antiquewhite;
+        color: #1f1f29;
+        width: fit-content;
+        height: fit-content;
+        padding: 0.5rem 1rem;
+        &:hover {
+          cursor: pointer;
+        }
+      }
+      .appDownload {
+        padding: 0;
+        margin: 0;
+        background: none;
+        border: 0;
+        border-radius: 26px;
+        width: 150px;
+        height: 50px;
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+    .title {
+      background-color: var(--color-2);
+      padding: 20px;
+    }
+    .fanFav {
+      background-color: antiquewhite;
+      display: flex;
+      justify-content: center;
+      .itemList {
+        height: 450px;
+        display: flex;
+        gap: 90px;
+        .item {
+          display: flex;
+          text-align: center;
+          justify-content: center;
+          flex-direction: column;
+          gap: 1rem;
+          align-items: center;
+          .itemPhoto {
+            width: 250px;
+            height: 250px;
+            background-size: cover;
+          }
+        }
+      }
+    }
+    .location {
+      background-color: antiquewhite;
+      display: flex;
+      align-items: end;
+      justify-content: center;
+      padding: 25px;
+      text-align: center;
+    }
+    .review-slider {
+      width: 100%;
+      overflow-x: auto;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+
+    .review-track {
+      display: flex;
+      gap: 20px;
+      min-width: max-content;
+    }
+
+    .review-card {
+      flex: 0 0 300px;
+      background-color: #fffbe6;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      box-sizing: border-box;
+    }
+
+    .review-title {
+      font-size: 1.1rem;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    .review-rating {
+      color: #fbbf24;
+      margin-bottom: 10px;
+    }
+
+    .review-text {
+      font-size: 0.95rem;
+      margin-bottom: 15px;
+      color: #333;
+    }
+
+    .review-footer {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .review-img {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+    }
+
+    .review-name {
+      font-size: 0.9rem;
+      font-weight: 500;
+    }
+  }
+  .menu-section {
+    display: grid;
+    gap: 25px;
+    grid-template-columns: repeat(auto-fit, minmax(526px, 1fr));
+    .item-card {
+      background-color: antiquewhite;
+      width: 100%;
+      max-width: 526px;
+      margin: 0 auto;
+      display: flex;
+      border-radius: 20px;
+      .item-img {
+        transform: scale(0.75, 0.75);
+      }
+      .item-infor {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 30px;
+        padding-right: 25px;
+        .item-name {
+          font-size: x-large;
+        }
+        .item-price {
+          font-size: x-large;
+          color: var(--color-1);
+          font-weight: 700;
+        }
+      }
+    }
+  }
+  .about-section {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    p {
+      background-color: antiquewhite;
+      padding: 50px;
+      font-size: large;
+      line-height: 200%;
+    }
+  }
+  footer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-1);
+  }
+  .site-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 30px;
+    width: 1080px;
+    color: #f9f9f9;
+    padding: 2rem;
+    flex-wrap: wrap;
+  }
+
+  .site-footer a {
+    color: #f9f9f9;
+    text-decoration: none;
+  }
+
+  .site-footer a:hover {
+    text-decoration: underline;
+  }
+
+  .footer-left img {
+    width: 120px;
+    height: auto;
+  }
+
+  .footer-center,
+  .footer-right {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    font-size: 0.95rem;
+  }
+
+  .footer-socials {
+    margin-top: 0.5rem;
+    font-size: 0.85rem;
+  }
+}
